@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-12T12:06:36.557Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="poHTxkDcDhXX-MXyt0sW" version="13.7.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-12T12:36:32.120Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="s6xX2qqQFAzuR1-wFJq0" version="13.7.9" type="github" pages="2">
   <diagram id="TySNi0Zyadw6SgvpFzOM" name="ReplicaStateMachine">
     <mxGraphModel dx="1426" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -129,7 +129,7 @@
         <mxCell id="HMK-gUAQqBiherPMlkDH-16" value="添加到 AR 的状态，可做leader、follower" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;" parent="qehNRnXvlH6UV2NimaYm-12" vertex="1">
           <mxGeometry y="25" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="HMK-gUAQqBiherPMlkDH-18" value="" style="endArrow=classic;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;rounded=1;jumpStyle=none;shadow=0;edgeStyle=orthogonalEdgeStyle;curved=1;" parent="qehNRnXvlH6UV2NimaYm-12" source="HMK-gUAQqBiherPMlkDH-9" target="HMK-gUAQqBiherPMlkDH-9" edge="1">
+        <mxCell id="HMK-gUAQqBiherPMlkDH-18" value="" style="endArrow=classic;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;rounded=1;jumpStyle=none;shadow=0;edgeStyle=orthogonalEdgeStyle;curved=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="qehNRnXvlH6UV2NimaYm-12" source="HMK-gUAQqBiherPMlkDH-9" target="HMK-gUAQqBiherPMlkDH-9" edge="1">
           <mxGeometry y="-320" width="50" height="50" as="geometry">
             <mxPoint x="350" y="100" as="sourcePoint" />
             <mxPoint x="230" y="60" as="targetPoint" />
@@ -167,6 +167,57 @@
             <mxPoint x="560" y="480" as="sourcePoint" />
             <mxPoint x="610" y="430" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="1MHAfUvT2UG18_nVS0-U" name="PartitionStateMachine">
+    <mxGraphModel dx="1426" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="isVmadQrg0_nP7J6bVH2-0" />
+        <mxCell id="isVmadQrg0_nP7J6bVH2-1" parent="isVmadQrg0_nP7J6bVH2-0" />
+        <mxCell id="isVmadQrg0_nP7J6bVH2-4" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;edgeStyle=orthogonalEdgeStyle;curved=1;" edge="1" parent="isVmadQrg0_nP7J6bVH2-1" source="isVmadQrg0_nP7J6bVH2-2" target="isVmadQrg0_nP7J6bVH2-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="isVmadQrg0_nP7J6bVH2-6" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;edgeStyle=orthogonalEdgeStyle;curved=1;" edge="1" parent="isVmadQrg0_nP7J6bVH2-1" source="isVmadQrg0_nP7J6bVH2-3" target="isVmadQrg0_nP7J6bVH2-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="140" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="isVmadQrg0_nP7J6bVH2-13" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="isVmadQrg0_nP7J6bVH2-1" source="isVmadQrg0_nP7J6bVH2-3" target="isVmadQrg0_nP7J6bVH2-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="isVmadQrg0_nP7J6bVH2-3" value="NewPartition" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;sketch=0;" vertex="1" parent="isVmadQrg0_nP7J6bVH2-1">
+          <mxGeometry x="80" y="230" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="isVmadQrg0_nP7J6bVH2-8" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;edgeStyle=orthogonalEdgeStyle;curved=1;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="isVmadQrg0_nP7J6bVH2-1" source="isVmadQrg0_nP7J6bVH2-5" target="isVmadQrg0_nP7J6bVH2-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="isVmadQrg0_nP7J6bVH2-5" value="OnlinePartition" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#82b366;fillColor=#d5e8d4;sketch=0;" vertex="1" parent="isVmadQrg0_nP7J6bVH2-1">
+          <mxGeometry x="330" y="390" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="isVmadQrg0_nP7J6bVH2-9" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;edgeStyle=orthogonalEdgeStyle;curved=1;fillColor=#f5f5f5;strokeColor=#666666;" edge="1" parent="isVmadQrg0_nP7J6bVH2-1" source="isVmadQrg0_nP7J6bVH2-7" target="isVmadQrg0_nP7J6bVH2-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="630" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="isVmadQrg0_nP7J6bVH2-7" value="OfflinePartition" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#9673a6;fillColor=#e1d5e7;sketch=0;" vertex="1" parent="isVmadQrg0_nP7J6bVH2-1">
+          <mxGeometry x="570" y="230" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="isVmadQrg0_nP7J6bVH2-11" value="" style="group" vertex="1" connectable="0" parent="isVmadQrg0_nP7J6bVH2-1">
+          <mxGeometry x="315" y="80" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="isVmadQrg0_nP7J6bVH2-2" value="NonExistentPartition" style="ellipse;whiteSpace=wrap;html=1;sketch=0;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="isVmadQrg0_nP7J6bVH2-11">
+          <mxGeometry x="15" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="isVmadQrg0_nP7J6bVH2-10" value="Partition 不存在，或者曾经存在现在已经删除。" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;" vertex="1" parent="isVmadQrg0_nP7J6bVH2-11">
+          <mxGeometry y="80" width="150" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
