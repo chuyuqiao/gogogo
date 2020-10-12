@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-12T10:08:07.252Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="yt6GfWhkAtQzdug97TVy" version="13.7.9" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2020-10-12T11:31:06.912Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="njtLsCgzSqp4u37oR_2D" version="13.7.9" type="github" pages="2">
   <diagram name="Page-1" id="74e2e168-ea6b-b213-b513-2b3c1d86103e">
     <mxGraphModel dx="946" dy="532" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
@@ -176,60 +176,103 @@
       <root>
         <mxCell id="HMK-gUAQqBiherPMlkDH-0" />
         <mxCell id="HMK-gUAQqBiherPMlkDH-1" parent="HMK-gUAQqBiherPMlkDH-0" />
-        <mxCell id="HMK-gUAQqBiherPMlkDH-22" value="" style="group" vertex="1" connectable="0" parent="HMK-gUAQqBiherPMlkDH-1">
-          <mxGeometry x="80" y="40" width="720" height="440" as="geometry" />
+        <mxCell id="HMK-gUAQqBiherPMlkDH-5" value="&lt;h1&gt;说明&lt;/h1&gt;&lt;p&gt;1、replicaId = brokerId&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;sketch=0;" vertex="1" parent="HMK-gUAQqBiherPMlkDH-1">
+          <mxGeometry x="610" y="680" width="190" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="HMK-gUAQqBiherPMlkDH-15" value="" style="group;sketch=0;" vertex="1" connectable="0" parent="HMK-gUAQqBiherPMlkDH-22">
-          <mxGeometry width="720" height="440" as="geometry" />
-        </mxCell>
-        <mxCell id="HMK-gUAQqBiherPMlkDH-5" value="&lt;h1&gt;说明&lt;/h1&gt;&lt;p&gt;1、replicaId = brokerId&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;sketch=0;" vertex="1" parent="HMK-gUAQqBiherPMlkDH-15">
-          <mxGeometry x="530" width="190" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="HMK-gUAQqBiherPMlkDH-13" value="" style="group;sketch=0;" vertex="1" connectable="0" parent="HMK-gUAQqBiherPMlkDH-15">
-          <mxGeometry y="40" width="315" height="400" as="geometry" />
-        </mxCell>
-        <mxCell id="HMK-gUAQqBiherPMlkDH-2" value="NonExistentReplica" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;sketch=0;" vertex="1" parent="HMK-gUAQqBiherPMlkDH-13">
-          <mxGeometry x="120" width="120" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="HMK-gUAQqBiherPMlkDH-3" value="NewReplica" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;sketch=0;" vertex="1" parent="HMK-gUAQqBiherPMlkDH-13">
-          <mxGeometry x="120" y="160" width="120" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="HMK-gUAQqBiherPMlkDH-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;sketch=0;" edge="1" parent="HMK-gUAQqBiherPMlkDH-13" source="HMK-gUAQqBiherPMlkDH-2" target="HMK-gUAQqBiherPMlkDH-3">
+        <mxCell id="HMK-gUAQqBiherPMlkDH-31" value="" style="rounded=1;sketch=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;shadow=0;" edge="1" parent="HMK-gUAQqBiherPMlkDH-1" source="HMK-gUAQqBiherPMlkDH-27" target="HMK-gUAQqBiherPMlkDH-30">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HMK-gUAQqBiherPMlkDH-32" value="&lt;span style=&quot;text-align: left&quot;&gt;发送 StopReplica 请求给 Replica，并且设置&lt;br&gt;deletePartition == true&lt;br&gt;&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HMK-gUAQqBiherPMlkDH-31">
+          <mxGeometry x="0.2833" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HMK-gUAQqBiherPMlkDH-27" value="OfflineReplica" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#d79b00;fillColor=#ffe6cc;sketch=0;" vertex="1" parent="HMK-gUAQqBiherPMlkDH-1">
+          <mxGeometry x="525" y="455" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HMK-gUAQqBiherPMlkDH-28" value="" style="rounded=1;sketch=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;shadow=0;" edge="1" parent="HMK-gUAQqBiherPMlkDH-1" source="HMK-gUAQqBiherPMlkDH-9" target="HMK-gUAQqBiherPMlkDH-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HMK-gUAQqBiherPMlkDH-29" value="1、发送 StopReplica 请求给 Replica。&lt;br&gt;2、从 isr 中移除这个 Replica，并且发送 LeaderAndIsr &lt;br&gt;请求给这个 Partition 的其它 副本。&lt;br&gt;3、&lt;span style=&quot;font-size: 12px ; background-color: rgb(248 , 249 , 250)&quot;&gt;向所有 live broker 发送 UpdateMetada 请求。&lt;/span&gt;" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HMK-gUAQqBiherPMlkDH-28">
+          <mxGeometry x="0.0429" y="2" relative="1" as="geometry">
+            <mxPoint x="-184" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HMK-gUAQqBiherPMlkDH-35" value="" style="rounded=1;sketch=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;shadow=0;" edge="1" parent="HMK-gUAQqBiherPMlkDH-1" source="HMK-gUAQqBiherPMlkDH-30" target="HMK-gUAQqBiherPMlkDH-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HMK-gUAQqBiherPMlkDH-36" value="" style="edgeStyle=none;rounded=1;sketch=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;shadow=0;" edge="1" parent="HMK-gUAQqBiherPMlkDH-1" source="HMK-gUAQqBiherPMlkDH-30" target="HMK-gUAQqBiherPMlkDH-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HMK-gUAQqBiherPMlkDH-37" value="" style="edgeStyle=none;rounded=1;sketch=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;shadow=0;" edge="1" parent="HMK-gUAQqBiherPMlkDH-1" source="HMK-gUAQqBiherPMlkDH-30" target="HMK-gUAQqBiherPMlkDH-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HMK-gUAQqBiherPMlkDH-38" value="" style="edgeStyle=none;rounded=1;sketch=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;shadow=0;" edge="1" parent="HMK-gUAQqBiherPMlkDH-1" source="HMK-gUAQqBiherPMlkDH-30" target="HMK-gUAQqBiherPMlkDH-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HMK-gUAQqBiherPMlkDH-39" value="" style="edgeStyle=none;rounded=1;sketch=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;shadow=0;" edge="1" parent="HMK-gUAQqBiherPMlkDH-1" source="HMK-gUAQqBiherPMlkDH-30" target="HMK-gUAQqBiherPMlkDH-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HMK-gUAQqBiherPMlkDH-41" value="" style="edgeStyle=none;rounded=1;sketch=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;shadow=0;" edge="1" parent="HMK-gUAQqBiherPMlkDH-1" source="HMK-gUAQqBiherPMlkDH-30" target="HMK-gUAQqBiherPMlkDH-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HMK-gUAQqBiherPMlkDH-30" value="ReplicaDeletionStarted" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#d6b656;fillColor=#fff2cc;sketch=0;" vertex="1" parent="HMK-gUAQqBiherPMlkDH-1">
+          <mxGeometry x="520" y="265" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HMK-gUAQqBiherPMlkDH-34" value="ReplicaDeletionIneligible" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#b85450;fillColor=#f8cecc;sketch=0;" vertex="1" parent="HMK-gUAQqBiherPMlkDH-1">
+          <mxGeometry x="610" y="90" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="HMK-gUAQqBiherPMlkDH-43" value="" style="edgeStyle=none;rounded=1;sketch=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;shadow=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="HMK-gUAQqBiherPMlkDH-1" source="HMK-gUAQqBiherPMlkDH-40" target="HMK-gUAQqBiherPMlkDH-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HMK-gUAQqBiherPMlkDH-40" value="ReplicaDeletionSuccessful" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#9673a6;fillColor=#e1d5e7;sketch=0;" vertex="1" parent="HMK-gUAQqBiherPMlkDH-1">
+          <mxGeometry x="350" y="95" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="HMK-gUAQqBiherPMlkDH-2" value="NonExistentReplica" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;sketch=0;" vertex="1" parent="HMK-gUAQqBiherPMlkDH-1">
+          <mxGeometry x="170" y="225" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HMK-gUAQqBiherPMlkDH-4" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;sketch=0;" edge="1" parent="HMK-gUAQqBiherPMlkDH-1" source="HMK-gUAQqBiherPMlkDH-2" target="HMK-gUAQqBiherPMlkDH-3">
+          <mxGeometry x="50" y="315" as="geometry" />
         </mxCell>
         <mxCell id="HMK-gUAQqBiherPMlkDH-20" value="&lt;span style=&quot;font-size: 12px ; text-align: left ; background-color: rgb(248 , 249 , 250)&quot;&gt;1、发送 LeaderAndIsr&amp;nbsp; 请求给新创建的 Replica。&lt;/span&gt;&lt;br style=&quot;font-size: 12px ; text-align: left ; background-color: rgb(248 , 249 , 250)&quot;&gt;&lt;span style=&quot;font-size: 12px ; text-align: left ; background-color: rgb(248 , 249 , 250)&quot;&gt;2、向所有 live broker 发送 UpdateMetada 请求。&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HMK-gUAQqBiherPMlkDH-4">
           <mxGeometry x="-0.05" y="3" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="HMK-gUAQqBiherPMlkDH-9" value="OnlineReplica" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;sketch=0;" vertex="1" parent="HMK-gUAQqBiherPMlkDH-13">
-          <mxGeometry x="120" y="320" width="120" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="HMK-gUAQqBiherPMlkDH-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;sketch=0;" edge="1" parent="HMK-gUAQqBiherPMlkDH-13" source="HMK-gUAQqBiherPMlkDH-3" target="HMK-gUAQqBiherPMlkDH-9">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="HMK-gUAQqBiherPMlkDH-10" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;sketch=0;" edge="1" parent="HMK-gUAQqBiherPMlkDH-1" source="HMK-gUAQqBiherPMlkDH-3" target="HMK-gUAQqBiherPMlkDH-9">
+          <mxGeometry x="50" y="385" as="geometry" />
         </mxCell>
         <mxCell id="HMK-gUAQqBiherPMlkDH-21" value="&lt;span style=&quot;font-size: 12px ; text-align: left ; background-color: rgb(248 , 249 , 250)&quot;&gt;如果需要的情况下，向这个 Partition &lt;br&gt;的AR添加这个新的 Replica&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HMK-gUAQqBiherPMlkDH-10">
           <mxGeometry x="-0.25" y="-3" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="HMK-gUAQqBiherPMlkDH-12" value="Replica 刚创建时的状态，只能做 follower" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;" vertex="1" parent="HMK-gUAQqBiherPMlkDH-13">
-          <mxGeometry y="190" width="120" height="20" as="geometry" />
+        <mxCell id="HMK-gUAQqBiherPMlkDH-44" value="" style="group" vertex="1" connectable="0" parent="HMK-gUAQqBiherPMlkDH-1">
+          <mxGeometry x="50" y="405" width="240" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="HMK-gUAQqBiherPMlkDH-16" value="添加到 AR 的状态，可做leader、follower" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;" vertex="1" parent="HMK-gUAQqBiherPMlkDH-13">
-          <mxGeometry y="345" width="120" height="30" as="geometry" />
+        <mxCell id="HMK-gUAQqBiherPMlkDH-3" value="NewReplica" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;sketch=0;" vertex="1" parent="HMK-gUAQqBiherPMlkDH-44">
+          <mxGeometry x="120" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="HMK-gUAQqBiherPMlkDH-18" value="" style="endArrow=classic;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;rounded=1;jumpStyle=none;shadow=0;" edge="1" parent="HMK-gUAQqBiherPMlkDH-13" source="HMK-gUAQqBiherPMlkDH-9" target="HMK-gUAQqBiherPMlkDH-9">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="350" y="420" as="sourcePoint" />
-            <mxPoint x="230" y="380" as="targetPoint" />
+        <mxCell id="HMK-gUAQqBiherPMlkDH-12" value="Replica 刚创建时的状态，只能做 follower" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;" vertex="1" parent="HMK-gUAQqBiherPMlkDH-44">
+          <mxGeometry y="30" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="HMK-gUAQqBiherPMlkDH-45" value="" style="group" vertex="1" connectable="0" parent="HMK-gUAQqBiherPMlkDH-1">
+          <mxGeometry x="50" y="635" width="240" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="HMK-gUAQqBiherPMlkDH-9" value="OnlineReplica" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;sketch=0;" vertex="1" parent="HMK-gUAQqBiherPMlkDH-45">
+          <mxGeometry x="120" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HMK-gUAQqBiherPMlkDH-16" value="添加到 AR 的状态，可做leader、follower" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;" vertex="1" parent="HMK-gUAQqBiherPMlkDH-45">
+          <mxGeometry y="25" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HMK-gUAQqBiherPMlkDH-18" value="" style="endArrow=classic;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;rounded=1;jumpStyle=none;shadow=0;edgeStyle=orthogonalEdgeStyle;curved=1;" edge="1" parent="HMK-gUAQqBiherPMlkDH-45" source="HMK-gUAQqBiherPMlkDH-9" target="HMK-gUAQqBiherPMlkDH-9">
+          <mxGeometry y="-320" width="50" height="50" as="geometry">
+            <mxPoint x="350" y="100" as="sourcePoint" />
+            <mxPoint x="230" y="60" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="120" y="430" />
-              <mxPoint x="130" y="450" />
-              <mxPoint x="150" y="470" />
-              <mxPoint x="170" y="480" />
-              <mxPoint x="222" y="470" />
-              <mxPoint x="250" y="440" />
+              <mxPoint x="180" y="140" />
             </Array>
           </mxGeometry>
         </mxCell>
