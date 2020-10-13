@@ -1,5 +1,5 @@
-<mxfile host="app.diagrams.net" modified="2020-10-13T06:34:26.471Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="sBOoiDTBkn1eW4oWswd7" version="13.7.9" type="github" pages="2">
-  <diagram id="TySNi0Zyadw6SgvpFzOM" name="ReplicaStateMachine">
+<mxfile host="app.diagrams.net" modified="2020-10-13T06:40:10.182Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="I9BH5JAVmQFG53nElXfB" version="13.7.9" type="github" pages="3">
+  <diagram id="TySNi0Zyadw6SgvpFzOM" name="副本状态机">
     <mxGraphModel dx="1426" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="HMK-gUAQqBiherPMlkDH-0" />
@@ -171,7 +171,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="1MHAfUvT2UG18_nVS0-U" name="PartitionStateMachine">
+  <diagram id="1MHAfUvT2UG18_nVS0-U" name="分区状态机">
     <mxGraphModel dx="1426" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="isVmadQrg0_nP7J6bVH2-0" />
@@ -287,6 +287,14 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="QrTFE32Dahz5huJ2j8bn" name="副本迁移">
+    <mxGraphModel dx="1426" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="LZpg6AHhA8l05rzdTZTv-0" />
+        <mxCell id="LZpg6AHhA8l05rzdTZTv-1" parent="LZpg6AHhA8l05rzdTZTv-0" />
       </root>
     </mxGraphModel>
   </diagram>
