@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-13T06:40:10.182Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="I9BH5JAVmQFG53nElXfB" version="13.7.9" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2020-10-15T09:23:24.735Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.80 Safari/537.36" etag="pfVjzOOpRQHVLpndj_qX" version="13.8.0" type="github" pages="3">
   <diagram id="TySNi0Zyadw6SgvpFzOM" name="副本状态机">
     <mxGraphModel dx="1426" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -295,6 +295,40 @@
       <root>
         <mxCell id="LZpg6AHhA8l05rzdTZTv-0" />
         <mxCell id="LZpg6AHhA8l05rzdTZTv-1" parent="LZpg6AHhA8l05rzdTZTv-0" />
+        <mxCell id="bZn0xBxZknq9e5iWEY-U-0" value="&lt;pre style=&quot;background-color: rgb(255 , 255 , 255) ; font-family: &amp;#34;menlo&amp;#34;&quot;&gt;PartitionReassignmentHandler&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="LZpg6AHhA8l05rzdTZTv-1">
+          <mxGeometry x="40" y="40" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bZn0xBxZknq9e5iWEY-U-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="LZpg6AHhA8l05rzdTZTv-1" source="bZn0xBxZknq9e5iWEY-U-6" target="bZn0xBxZknq9e5iWEY-U-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bZn0xBxZknq9e5iWEY-U-11" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="bZn0xBxZknq9e5iWEY-U-10">
+          <mxGeometry x="-0.2333" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bZn0xBxZknq9e5iWEY-U-13" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="LZpg6AHhA8l05rzdTZTv-1" source="bZn0xBxZknq9e5iWEY-U-6" target="bZn0xBxZknq9e5iWEY-U-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bZn0xBxZknq9e5iWEY-U-14" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="bZn0xBxZknq9e5iWEY-U-13">
+          <mxGeometry x="-0.05" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bZn0xBxZknq9e5iWEY-U-6" value="&lt;pre style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;该 partition 是否正在迁移&lt;/span&gt;&lt;/pre&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="LZpg6AHhA8l05rzdTZTv-1">
+          <mxGeometry x="310" y="220" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="bZn0xBxZknq9e5iWEY-U-8" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="LZpg6AHhA8l05rzdTZTv-1" source="bZn0xBxZknq9e5iWEY-U-7" target="bZn0xBxZknq9e5iWEY-U-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bZn0xBxZknq9e5iWEY-U-7" value="开始" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="LZpg6AHhA8l05rzdTZTv-1">
+          <mxGeometry x="350" y="100" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bZn0xBxZknq9e5iWEY-U-9" value="结束" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="LZpg6AHhA8l05rzdTZTv-1">
+          <mxGeometry x="140" y="320" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bZn0xBxZknq9e5iWEY-U-12" value="" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="LZpg6AHhA8l05rzdTZTv-1">
+          <mxGeometry x="315" y="380" width="170" height="100" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
