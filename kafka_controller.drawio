@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-15T09:45:02.333Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.80 Safari/537.36" etag="4m-yna7TrrRi9r38Bcy7" version="13.8.0" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2020-10-16T07:41:52.216Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.80 Safari/537.36" etag="BgJbfyjL5zeM-VQlW40a" version="13.8.0" type="github" pages="4">
   <diagram id="TySNi0Zyadw6SgvpFzOM" name="副本状态机">
     <mxGraphModel dx="1426" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -179,7 +179,7 @@
         <mxCell id="isVmadQrg0_nP7J6bVH2-4" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;edgeStyle=orthogonalEdgeStyle;curved=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="isVmadQrg0_nP7J6bVH2-1" source="isVmadQrg0_nP7J6bVH2-2" target="isVmadQrg0_nP7J6bVH2-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="wm_oVBO_ErBg2a_TBDjJ-14" value="load assigned replicas from&lt;br&gt;ZK to controller cache" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="isVmadQrg0_nP7J6bVH2-4">
+        <mxCell id="wm_oVBO_ErBg2a_TBDjJ-14" value="load assigned replicas from&lt;br&gt;ZK to controller cache" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="isVmadQrg0_nP7J6bVH2-4" vertex="1" connectable="0">
           <mxGeometry x="0.0333" y="36" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -191,7 +191,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="wm_oVBO_ErBg2a_TBDjJ-2" value="1、分配 replicas 中的第一个 replica &lt;br&gt;作为 leader，全部 live replicas 作为 isr，&lt;br&gt;并把 leader 和 isr 信息更新到 zk 中。&lt;br&gt;2、发送 LeaderAndIsr 请求给所有 live replica，&lt;br&gt;发送UpdateMetadata 给每个 alive 的Broker。" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="isVmadQrg0_nP7J6bVH2-6">
+        <mxCell id="wm_oVBO_ErBg2a_TBDjJ-2" value="1、分配 replicas 中的第一个 replica &lt;br&gt;作为 leader，全部 live replicas 作为 isr，&lt;br&gt;并把 leader 和 isr 信息更新到 zk 中。&lt;br&gt;2、发送 LeaderAndIsr 请求给所有 live replica，&lt;br&gt;发送UpdateMetadata 给每个 alive 的Broker。" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="isVmadQrg0_nP7J6bVH2-6" vertex="1" connectable="0">
           <mxGeometry x="-0.5613" y="23" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -201,7 +201,7 @@
             <mxPoint x="320" y="280" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="wm_oVBO_ErBg2a_TBDjJ-7" value="nothing other than marking partition state as Offline" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="isVmadQrg0_nP7J6bVH2-13">
+        <mxCell id="wm_oVBO_ErBg2a_TBDjJ-7" value="nothing other than marking partition state as Offline" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="isVmadQrg0_nP7J6bVH2-13" vertex="1" connectable="0">
           <mxGeometry x="-0.1189" y="4" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -209,7 +209,7 @@
         <mxCell id="isVmadQrg0_nP7J6bVH2-8" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;edgeStyle=orthogonalEdgeStyle;curved=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="isVmadQrg0_nP7J6bVH2-1" source="isVmadQrg0_nP7J6bVH2-5" target="isVmadQrg0_nP7J6bVH2-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="wm_oVBO_ErBg2a_TBDjJ-8" value="nothing other than marking partition state as Offline" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="isVmadQrg0_nP7J6bVH2-8">
+        <mxCell id="wm_oVBO_ErBg2a_TBDjJ-8" value="nothing other than marking partition state as Offline" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="isVmadQrg0_nP7J6bVH2-8" vertex="1" connectable="0">
           <mxGeometry x="-0.3067" y="12" relative="1" as="geometry">
             <mxPoint x="36" y="-18" as="offset" />
           </mxGeometry>
@@ -221,7 +221,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="wm_oVBO_ErBg2a_TBDjJ-9" value="nothing other than marking partition state as Offline" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="isVmadQrg0_nP7J6bVH2-9">
+        <mxCell id="wm_oVBO_ErBg2a_TBDjJ-9" value="nothing other than marking partition state as Offline" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="isVmadQrg0_nP7J6bVH2-9" vertex="1" connectable="0">
           <mxGeometry x="-0.4" y="46" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -235,25 +235,25 @@
         <mxCell id="isVmadQrg0_nP7J6bVH2-10" value="Partition 不存在，或者曾经存在现在已经删除。" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;" parent="isVmadQrg0_nP7J6bVH2-11" vertex="1">
           <mxGeometry y="80" width="150" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="wm_oVBO_ErBg2a_TBDjJ-1" value="" style="group" vertex="1" connectable="0" parent="isVmadQrg0_nP7J6bVH2-1">
+        <mxCell id="wm_oVBO_ErBg2a_TBDjJ-1" value="" style="group" parent="isVmadQrg0_nP7J6bVH2-1" vertex="1" connectable="0">
           <mxGeometry x="10" y="240" width="230" height="80" as="geometry" />
         </mxCell>
         <mxCell id="isVmadQrg0_nP7J6bVH2-3" value="NewPartition" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;sketch=0;" parent="wm_oVBO_ErBg2a_TBDjJ-1" vertex="1">
           <mxGeometry x="110" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="wm_oVBO_ErBg2a_TBDjJ-0" value="Partition 刚创建，有replicas，但还没有 leader 和 isr。" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="wm_oVBO_ErBg2a_TBDjJ-1">
+        <mxCell id="wm_oVBO_ErBg2a_TBDjJ-0" value="Partition 刚创建，有replicas，但还没有 leader 和 isr。" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="wm_oVBO_ErBg2a_TBDjJ-1" vertex="1">
           <mxGeometry y="20" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="wm_oVBO_ErBg2a_TBDjJ-4" value="" style="group" vertex="1" connectable="0" parent="isVmadQrg0_nP7J6bVH2-1">
+        <mxCell id="wm_oVBO_ErBg2a_TBDjJ-4" value="" style="group" parent="isVmadQrg0_nP7J6bVH2-1" vertex="1" connectable="0">
           <mxGeometry x="370" y="400" width="120" height="130" as="geometry" />
         </mxCell>
         <mxCell id="isVmadQrg0_nP7J6bVH2-5" value="OnlinePartition" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#82b366;fillColor=#d5e8d4;sketch=0;" parent="wm_oVBO_ErBg2a_TBDjJ-4" vertex="1">
           <mxGeometry width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="wm_oVBO_ErBg2a_TBDjJ-3" value="Partition 的 leader 已经选举出来" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="wm_oVBO_ErBg2a_TBDjJ-4">
+        <mxCell id="wm_oVBO_ErBg2a_TBDjJ-3" value="Partition 的 leader 已经选举出来" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="wm_oVBO_ErBg2a_TBDjJ-4" vertex="1">
           <mxGeometry y="80" width="120" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="wm_oVBO_ErBg2a_TBDjJ-5" value="" style="endArrow=classic;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;curved=1;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="wm_oVBO_ErBg2a_TBDjJ-4" source="isVmadQrg0_nP7J6bVH2-5" target="isVmadQrg0_nP7J6bVH2-5">
+        <mxCell id="wm_oVBO_ErBg2a_TBDjJ-5" value="" style="endArrow=classic;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;curved=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="wm_oVBO_ErBg2a_TBDjJ-4" source="isVmadQrg0_nP7J6bVH2-5" target="isVmadQrg0_nP7J6bVH2-5" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="270" y="70" as="sourcePoint" />
             <mxPoint x="320" y="20" as="targetPoint" />
@@ -262,27 +262,27 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="wm_oVBO_ErBg2a_TBDjJ-6" value="1、为这个 partition 选举新的 leader 和 isr，所有&lt;br&gt;live replica 来接收 LeaderAndIsr 请求，并把&lt;br&gt;leader 和 isr 信息更新到 zk 上。&lt;br&gt;2、发送 LeaderAndIsr 请求给所有 live replica，&lt;br&gt;发送UpdateMetadata 给每个 alive 的Broker。" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wm_oVBO_ErBg2a_TBDjJ-5">
+        <mxCell id="wm_oVBO_ErBg2a_TBDjJ-6" value="1、为这个 partition 选举新的 leader 和 isr，所有&lt;br&gt;live replica 来接收 LeaderAndIsr 请求，并把&lt;br&gt;leader 和 isr 信息更新到 zk 上。&lt;br&gt;2、发送 LeaderAndIsr 请求给所有 live replica，&lt;br&gt;发送UpdateMetadata 给每个 alive 的Broker。" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="wm_oVBO_ErBg2a_TBDjJ-5" vertex="1" connectable="0">
           <mxGeometry x="-0.4626" y="14" relative="1" as="geometry">
             <mxPoint x="5.88" y="25.970000000000002" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="wm_oVBO_ErBg2a_TBDjJ-11" value="" style="group" vertex="1" connectable="0" parent="isVmadQrg0_nP7J6bVH2-1">
+        <mxCell id="wm_oVBO_ErBg2a_TBDjJ-11" value="" style="group" parent="isVmadQrg0_nP7J6bVH2-1" vertex="1" connectable="0">
           <mxGeometry x="610" y="240" width="200" height="80" as="geometry" />
         </mxCell>
         <mxCell id="isVmadQrg0_nP7J6bVH2-7" value="OfflinePartition" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#9673a6;fillColor=#e1d5e7;sketch=0;" parent="wm_oVBO_ErBg2a_TBDjJ-11" vertex="1">
           <mxGeometry width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="wm_oVBO_ErBg2a_TBDjJ-10" value="Partition 的&lt;br&gt;leader 挂了" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="wm_oVBO_ErBg2a_TBDjJ-11">
+        <mxCell id="wm_oVBO_ErBg2a_TBDjJ-10" value="Partition 的&lt;br&gt;leader 挂了" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="wm_oVBO_ErBg2a_TBDjJ-11" vertex="1">
           <mxGeometry x="120" y="25" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="wm_oVBO_ErBg2a_TBDjJ-12" value="" style="endArrow=classic;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;curved=1;" edge="1" parent="isVmadQrg0_nP7J6bVH2-1" source="isVmadQrg0_nP7J6bVH2-7" target="isVmadQrg0_nP7J6bVH2-5">
+        <mxCell id="wm_oVBO_ErBg2a_TBDjJ-12" value="" style="endArrow=classic;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;curved=1;" parent="isVmadQrg0_nP7J6bVH2-1" source="isVmadQrg0_nP7J6bVH2-7" target="isVmadQrg0_nP7J6bVH2-5" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="650" y="370" as="sourcePoint" />
             <mxPoint x="700" y="320" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="wm_oVBO_ErBg2a_TBDjJ-13" value="1、为这个 partition 选举新的 leader 和 isr，所有&lt;br&gt;live replica 来接收 LeaderAndIsr 请求，并把&lt;br&gt;leader 和 isr 信息更新到 zk 上。&lt;br&gt;2、发送 LeaderAndIsr 请求给所有 live replica，&lt;br&gt;发送UpdateMetadata 给每个 alive 的Broker。" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wm_oVBO_ErBg2a_TBDjJ-12">
+        <mxCell id="wm_oVBO_ErBg2a_TBDjJ-13" value="1、为这个 partition 选举新的 leader 和 isr，所有&lt;br&gt;live replica 来接收 LeaderAndIsr 请求，并把&lt;br&gt;leader 和 isr 信息更新到 zk 上。&lt;br&gt;2、发送 LeaderAndIsr 请求给所有 live replica，&lt;br&gt;发送UpdateMetadata 给每个 alive 的Broker。" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="wm_oVBO_ErBg2a_TBDjJ-12" vertex="1" connectable="0">
           <mxGeometry x="0.1517" y="33" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -295,80 +295,150 @@
       <root>
         <mxCell id="LZpg6AHhA8l05rzdTZTv-0" />
         <mxCell id="LZpg6AHhA8l05rzdTZTv-1" parent="LZpg6AHhA8l05rzdTZTv-0" />
-        <mxCell id="bZn0xBxZknq9e5iWEY-U-0" value="&lt;pre style=&quot;background-color: rgb(255 , 255 , 255) ; font-family: &amp;#34;menlo&amp;#34;&quot;&gt;PartitionReassignmentHandler&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="LZpg6AHhA8l05rzdTZTv-1">
-          <mxGeometry x="40" y="40" width="230" height="60" as="geometry" />
+        <mxCell id="XBBJrYsHMT_xYTvtQ7yU-21" value="" style="group" vertex="1" connectable="0" parent="LZpg6AHhA8l05rzdTZTv-1">
+          <mxGeometry x="10" y="50" width="788.75" height="810" as="geometry" />
         </mxCell>
-        <mxCell id="bZn0xBxZknq9e5iWEY-U-10" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="LZpg6AHhA8l05rzdTZTv-1" source="bZn0xBxZknq9e5iWEY-U-6" target="bZn0xBxZknq9e5iWEY-U-9">
+        <mxCell id="bZn0xBxZknq9e5iWEY-U-13" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="XBBJrYsHMT_xYTvtQ7yU-21" target="bZn0xBxZknq9e5iWEY-U-12" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="110" y="270" />
-              <mxPoint x="110" y="810" />
-            </Array>
+            <mxPoint x="282.5" y="290" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="bZn0xBxZknq9e5iWEY-U-11" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="bZn0xBxZknq9e5iWEY-U-10">
-          <mxGeometry x="-0.2333" y="1" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="bZn0xBxZknq9e5iWEY-U-13" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="LZpg6AHhA8l05rzdTZTv-1" source="bZn0xBxZknq9e5iWEY-U-6" target="bZn0xBxZknq9e5iWEY-U-12">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="bZn0xBxZknq9e5iWEY-U-14" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="bZn0xBxZknq9e5iWEY-U-13">
+        <mxCell id="bZn0xBxZknq9e5iWEY-U-14" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="bZn0xBxZknq9e5iWEY-U-13" vertex="1" connectable="0">
           <mxGeometry x="-0.05" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="bZn0xBxZknq9e5iWEY-U-6" value="&lt;pre style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;该 partition 是否&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;正在迁移&lt;/span&gt;&lt;/pre&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="LZpg6AHhA8l05rzdTZTv-1">
-          <mxGeometry x="340" y="230" width="180" height="80" as="geometry" />
+        <mxCell id="bZn0xBxZknq9e5iWEY-U-6" value="&lt;pre style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;该 partition 是否&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;正在迁移&lt;/span&gt;&lt;/pre&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="XBBJrYsHMT_xYTvtQ7yU-21" vertex="1">
+          <mxGeometry x="192.5" y="210" width="180" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="bZn0xBxZknq9e5iWEY-U-8" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="LZpg6AHhA8l05rzdTZTv-1" source="bZn0xBxZknq9e5iWEY-U-7" target="bZn0xBxZknq9e5iWEY-U-6">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="bZn0xBxZknq9e5iWEY-U-7" value="开始" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="LZpg6AHhA8l05rzdTZTv-1">
-          <mxGeometry x="380" y="90" width="100" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="bZn0xBxZknq9e5iWEY-U-9" value="结束" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="LZpg6AHhA8l05rzdTZTv-1">
-          <mxGeometry x="160" y="770" width="100" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="bZn0xBxZknq9e5iWEY-U-18" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="LZpg6AHhA8l05rzdTZTv-1" source="bZn0xBxZknq9e5iWEY-U-12" target="bZn0xBxZknq9e5iWEY-U-22">
+        <mxCell id="bZn0xBxZknq9e5iWEY-U-8" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="XBBJrYsHMT_xYTvtQ7yU-21" source="bZn0xBxZknq9e5iWEY-U-7" target="bZn0xBxZknq9e5iWEY-U-6" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="205" y="520" as="targetPoint" />
+            <mxPoint x="282.5" y="210" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="bZn0xBxZknq9e5iWEY-U-20" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="bZn0xBxZknq9e5iWEY-U-18">
+        <mxCell id="bZn0xBxZknq9e5iWEY-U-7" value="开始" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" parent="XBBJrYsHMT_xYTvtQ7yU-21" vertex="1">
+          <mxGeometry x="232.5" y="70" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bZn0xBxZknq9e5iWEY-U-9" value="结束" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" parent="XBBJrYsHMT_xYTvtQ7yU-21" vertex="1">
+          <mxGeometry x="50" y="750" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bZn0xBxZknq9e5iWEY-U-10" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;edgeStyle=orthogonalEdgeStyle;" parent="XBBJrYsHMT_xYTvtQ7yU-21" source="bZn0xBxZknq9e5iWEY-U-6" target="bZn0xBxZknq9e5iWEY-U-9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint y="250" />
+              <mxPoint y="790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bZn0xBxZknq9e5iWEY-U-11" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="bZn0xBxZknq9e5iWEY-U-10" vertex="1" connectable="0">
+          <mxGeometry x="-0.2333" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bZn0xBxZknq9e5iWEY-U-12" value="该 partition 是否&lt;br&gt;标记为删除" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;" parent="XBBJrYsHMT_xYTvtQ7yU-21" vertex="1">
+          <mxGeometry x="215" y="390" width="135" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="XBBJrYsHMT_xYTvtQ7yU-17" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="XBBJrYsHMT_xYTvtQ7yU-21" source="bZn0xBxZknq9e5iWEY-U-6" target="bZn0xBxZknq9e5iWEY-U-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bZn0xBxZknq9e5iWEY-U-21" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="XBBJrYsHMT_xYTvtQ7yU-21" source="bZn0xBxZknq9e5iWEY-U-22" target="bZn0xBxZknq9e5iWEY-U-9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="44.375" y="470" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bZn0xBxZknq9e5iWEY-U-22" value="&lt;span&gt;将该 partition 从 zk 的迁移记录中删除，结果更新到 zk 中&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="XBBJrYsHMT_xYTvtQ7yU-21" vertex="1">
+          <mxGeometry x="40" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bZn0xBxZknq9e5iWEY-U-18" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="XBBJrYsHMT_xYTvtQ7yU-21" source="bZn0xBxZknq9e5iWEY-U-12" target="bZn0xBxZknq9e5iWEY-U-22" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="95" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bZn0xBxZknq9e5iWEY-U-20" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="bZn0xBxZknq9e5iWEY-U-18" vertex="1" connectable="0">
           <mxGeometry x="0.0733" relative="1" as="geometry">
             <mxPoint y="-1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="bZn0xBxZknq9e5iWEY-U-25" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="LZpg6AHhA8l05rzdTZTv-1" source="bZn0xBxZknq9e5iWEY-U-12" target="bZn0xBxZknq9e5iWEY-U-24">
+        <mxCell id="bZn0xBxZknq9e5iWEY-U-24" value="初始化要迁移的 partition" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="XBBJrYsHMT_xYTvtQ7yU-21" vertex="1">
+          <mxGeometry x="210" y="570" width="145" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bZn0xBxZknq9e5iWEY-U-25" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="XBBJrYsHMT_xYTvtQ7yU-21" source="bZn0xBxZknq9e5iWEY-U-12" target="bZn0xBxZknq9e5iWEY-U-24" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bZn0xBxZknq9e5iWEY-U-12" value="该 partition 是否&lt;br&gt;标记为删除" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="LZpg6AHhA8l05rzdTZTv-1">
-          <mxGeometry x="362.5" y="410" width="135" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="bZn0xBxZknq9e5iWEY-U-21" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="LZpg6AHhA8l05rzdTZTv-1" source="bZn0xBxZknq9e5iWEY-U-22" target="bZn0xBxZknq9e5iWEY-U-9">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="154.375" y="490" as="sourcePoint" />
+        <mxCell id="XBBJrYsHMT_xYTvtQ7yU-0" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="bZn0xBxZknq9e5iWEY-U-25">
+          <mxGeometry x="-0.15" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="bZn0xBxZknq9e5iWEY-U-22" value="&lt;span&gt;将该 partition 从 zk 的迁移记录中删除，结果更新到 zk 中&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="LZpg6AHhA8l05rzdTZTv-1">
-          <mxGeometry x="150" y="430" width="120" height="60" as="geometry" />
+        <mxCell id="bZn0xBxZknq9e5iWEY-U-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="XBBJrYsHMT_xYTvtQ7yU-21" source="bZn0xBxZknq9e5iWEY-U-26" target="bZn0xBxZknq9e5iWEY-U-9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="665" y="600" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="bZn0xBxZknq9e5iWEY-U-27" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="LZpg6AHhA8l05rzdTZTv-1" source="bZn0xBxZknq9e5iWEY-U-24" target="bZn0xBxZknq9e5iWEY-U-26">
+        <mxCell id="XBBJrYsHMT_xYTvtQ7yU-1" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="bZn0xBxZknq9e5iWEY-U-29">
+          <mxGeometry x="-0.7427" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bZn0xBxZknq9e5iWEY-U-26" value="该 partition 的副本&lt;br&gt;是否存在" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;" parent="XBBJrYsHMT_xYTvtQ7yU-21" vertex="1">
+          <mxGeometry x="430" y="555" width="145" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="bZn0xBxZknq9e5iWEY-U-27" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="XBBJrYsHMT_xYTvtQ7yU-21" source="bZn0xBxZknq9e5iWEY-U-24" target="bZn0xBxZknq9e5iWEY-U-26" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bZn0xBxZknq9e5iWEY-U-24" value="初始化要迁移的 partition" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="LZpg6AHhA8l05rzdTZTv-1">
-          <mxGeometry x="357.5" y="590" width="145" height="60" as="geometry" />
+        <mxCell id="XBBJrYsHMT_xYTvtQ7yU-2" value="开始迁移操作，新建的副本开始同步数据。如果满足 isr 条件，该副本会加入到 isr 中，再通过监听 isr 的情况，判断是否迁移完成。" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="XBBJrYsHMT_xYTvtQ7yU-21">
+          <mxGeometry x="408.75" y="410" width="187.5" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="bZn0xBxZknq9e5iWEY-U-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="LZpg6AHhA8l05rzdTZTv-1" source="bZn0xBxZknq9e5iWEY-U-26" target="bZn0xBxZknq9e5iWEY-U-9">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="775" y="620" as="targetPoint" />
+        <mxCell id="XBBJrYsHMT_xYTvtQ7yU-3" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="XBBJrYsHMT_xYTvtQ7yU-21" source="bZn0xBxZknq9e5iWEY-U-26" target="XBBJrYsHMT_xYTvtQ7yU-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XBBJrYsHMT_xYTvtQ7yU-4" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="XBBJrYsHMT_xYTvtQ7yU-3">
+          <mxGeometry x="-0.2211" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="bZn0xBxZknq9e5iWEY-U-26" value="该 partition 的副本&lt;br&gt;是否存在" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="LZpg6AHhA8l05rzdTZTv-1">
-          <mxGeometry x="550" y="575" width="145" height="90" as="geometry" />
+        <mxCell id="XBBJrYsHMT_xYTvtQ7yU-5" value="判断该 partition &lt;br&gt;是否迁移完成&lt;br&gt;（新副本&lt;br&gt;是否在 isr 中）" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="XBBJrYsHMT_xYTvtQ7yU-21">
+          <mxGeometry x="427.5" y="240" width="147.5" height="100" as="geometry" />
         </mxCell>
+        <mxCell id="XBBJrYsHMT_xYTvtQ7yU-6" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="XBBJrYsHMT_xYTvtQ7yU-21" source="XBBJrYsHMT_xYTvtQ7yU-2" target="XBBJrYsHMT_xYTvtQ7yU-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XBBJrYsHMT_xYTvtQ7yU-7" value="迁移完成后，下线旧的副本，将新的副本信息更新到缓存并更新 zk 中副本迁移的 partition 列表。&amp;nbsp;" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="XBBJrYsHMT_xYTvtQ7yU-21">
+          <mxGeometry x="421.87" y="110" width="158.75" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XBBJrYsHMT_xYTvtQ7yU-8" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="XBBJrYsHMT_xYTvtQ7yU-21" source="XBBJrYsHMT_xYTvtQ7yU-5" target="XBBJrYsHMT_xYTvtQ7yU-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XBBJrYsHMT_xYTvtQ7yU-9" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="XBBJrYsHMT_xYTvtQ7yU-8">
+          <mxGeometry x="0.1091" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XBBJrYsHMT_xYTvtQ7yU-12" value="完成" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="XBBJrYsHMT_xYTvtQ7yU-21">
+          <mxGeometry x="442.505" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XBBJrYsHMT_xYTvtQ7yU-13" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="XBBJrYsHMT_xYTvtQ7yU-21" source="XBBJrYsHMT_xYTvtQ7yU-7" target="XBBJrYsHMT_xYTvtQ7yU-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XBBJrYsHMT_xYTvtQ7yU-14" value="向新的 replica 再次发送 LeaderAndIsr 请求，新副本开始数据同步" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="XBBJrYsHMT_xYTvtQ7yU-21">
+          <mxGeometry x="668.75" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XBBJrYsHMT_xYTvtQ7yU-15" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="XBBJrYsHMT_xYTvtQ7yU-21" source="XBBJrYsHMT_xYTvtQ7yU-5" target="XBBJrYsHMT_xYTvtQ7yU-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XBBJrYsHMT_xYTvtQ7yU-16" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="XBBJrYsHMT_xYTvtQ7yU-15">
+          <mxGeometry x="-0.424" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="eewKVvYhqFU1bjK8aRXS" name="Broker 上下线">
+    <mxGraphModel dx="1426" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="qWlImmMHi30EqFsguoFH-0" />
+        <mxCell id="qWlImmMHi30EqFsguoFH-1" parent="qWlImmMHi30EqFsguoFH-0" />
       </root>
     </mxGraphModel>
   </diagram>
