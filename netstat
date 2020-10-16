@@ -1,0 +1,8 @@
+# 统计当前服务器各个TCP链接状态
+netstat -n | awk '/^tcp/ {++S[$NF]} END {for(a in S) print a, S[a]}'
+
+# 查看全部TIME_WAIT状态的链接
+netstat -anp |grep TIME_WAIT
+
+# 查看全部TCP4的TIME_WAIT状态的链接
+netstat -antp4 |grep TIME_WAIT
