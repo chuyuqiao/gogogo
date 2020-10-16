@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-16T09:35:27.944Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.80 Safari/537.36" etag="EM3huo0BrUBZtgK6fVMH" version="13.8.0" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-10-16T10:01:45.484Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.80 Safari/537.36" etag="6-yj0GuEta5F2XnTUPYz" version="13.8.0" type="github" pages="5">
   <diagram id="TySNi0Zyadw6SgvpFzOM" name="副本状态机">
     <mxGraphModel dx="1426" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -618,6 +618,14 @@
             <mxPoint x="840" y="670" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="cKII1xWul_C9JO8oNJGn" name="LeaderAndIsr 请求">
+    <mxGraphModel dx="1426" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="oHa9R7XRsvDBFl1aMqYG-0" />
+        <mxCell id="oHa9R7XRsvDBFl1aMqYG-1" parent="oHa9R7XRsvDBFl1aMqYG-0" />
       </root>
     </mxGraphModel>
   </diagram>
