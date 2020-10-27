@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-27T05:34:32.030Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="9GQXmin3hTWVGpmjIhrl" version="13.8.3" type="github" pages="8">
+<mxfile host="app.diagrams.net" modified="2020-10-27T05:36:59.410Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="sl17rnSKpvgKYXsWPdO8" version="13.8.3" type="github" pages="8">
   <diagram id="TySNi0Zyadw6SgvpFzOM" name="副本状态机">
     <mxGraphModel dx="1426" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1008,12 +1008,12 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram name="Consume 请求处理" id="wIcJbUl5KMozOVIOrudw">
+  <diagram name="Fetch 请求处理" id="wIcJbUl5KMozOVIOrudw">
     <mxGraphModel dx="1426" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="JuseNrKa7LFvC67CrQ3p-0" />
         <mxCell id="JuseNrKa7LFvC67CrQ3p-1" parent="JuseNrKa7LFvC67CrQ3p-0" />
-        <mxCell id="JuseNrKa7LFvC67CrQ3p-2" value="Consume" style="swimlane;html=1;childLayout=stackLayout;startSize=20;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=8;align=center;" vertex="1" parent="JuseNrKa7LFvC67CrQ3p-1">
+        <mxCell id="JuseNrKa7LFvC67CrQ3p-2" value="Fetch" style="swimlane;html=1;childLayout=stackLayout;startSize=20;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=8;align=center;" vertex="1" parent="JuseNrKa7LFvC67CrQ3p-1">
           <mxGeometry x="20" y="60" width="950" height="750" as="geometry">
             <mxRectangle x="20" y="60" width="60" height="20" as="alternateBounds" />
           </mxGeometry>
