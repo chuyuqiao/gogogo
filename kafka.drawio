@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-03T03:43:13.364Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="Nwhtt48s_3Z6gA8oZsDh" version="13.8.8" type="github" pages="10">
+<mxfile host="app.diagrams.net" modified="2020-11-03T11:07:07.792Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="hr3PNntSwkMvDP_8nBrd" version="13.8.8" type="github" pages="10">
   <diagram id="TySNi0Zyadw6SgvpFzOM" name="副本状态机">
     <mxGraphModel dx="1426" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1468,8 +1468,64 @@
       <root>
         <mxCell id="hhm9ghPMKgNZbMPpqFwr-0" />
         <mxCell id="hhm9ghPMKgNZbMPpqFwr-1" parent="hhm9ghPMKgNZbMPpqFwr-0" />
-        <mxCell id="hhm9ghPMKgNZbMPpqFwr-2" value="&lt;h1&gt;Topic创建场景&lt;/h1&gt;&lt;span style=&quot;color: rgb(68 , 68 , 68) ; text-align: justify ; background-color: rgb(247 , 248 , 248)&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;1&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(68 , 68 , 68) ; font-size: 15px ; text-align: justify ; background-color: rgb(247 , 248 , 248)&quot;&gt;、&lt;/span&gt;&lt;span style=&quot;color: rgb(68 , 68 , 68) ; text-align: justify ; background-color: rgb(247 , 248 , 248)&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;kafka-topics.sh&lt;/font&gt;&lt;/span&gt;&lt;p&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;2、auto.create.topics.enable = true 写入消息时发送Metadata请求创建&lt;/font&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="hhm9ghPMKgNZbMPpqFwr-1">
+        <mxCell id="hhm9ghPMKgNZbMPpqFwr-2" value="&lt;h1&gt;Topic创建场景&lt;/h1&gt;&lt;span style=&quot;color: rgb(68 , 68 , 68) ; text-align: justify ; background-color: rgb(247 , 248 , 248)&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;1&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(68 , 68 , 68) ; font-size: 15px ; text-align: justify ; background-color: rgb(247 , 248 , 248)&quot;&gt;、&lt;/span&gt;&lt;span style=&quot;color: rgb(68 , 68 , 68) ; text-align: justify ; background-color: rgb(247 , 248 , 248)&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;kafka-topics.sh&lt;/font&gt;&lt;/span&gt;&lt;p&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;2、auto.create.topics.enable = true 写入消息时发送Metadata请求创建&lt;/font&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="hhm9ghPMKgNZbMPpqFwr-1" vertex="1">
           <mxGeometry x="40" y="40" width="400" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="p3eGyqH2iu1hd-mBgMjx-0" value="TopicCommand" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="hhm9ghPMKgNZbMPpqFwr-1">
+          <mxGeometry x="170" y="230" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="p3eGyqH2iu1hd-mBgMjx-1" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="p3eGyqH2iu1hd-mBgMjx-0">
+          <mxGeometry x="45" y="70" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="p3eGyqH2iu1hd-mBgMjx-3" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="hhm9ghPMKgNZbMPpqFwr-1">
+          <mxGeometry x="110" y="270" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p3eGyqH2iu1hd-mBgMjx-2" value="createTopic" style="html=1;verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;" edge="1" target="p3eGyqH2iu1hd-mBgMjx-1" parent="hhm9ghPMKgNZbMPpqFwr-1" source="p3eGyqH2iu1hd-mBgMjx-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="155" y="300" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3eGyqH2iu1hd-mBgMjx-4" value="AdminUtils" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="hhm9ghPMKgNZbMPpqFwr-1">
+          <mxGeometry x="440" y="230" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="p3eGyqH2iu1hd-mBgMjx-9" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="p3eGyqH2iu1hd-mBgMjx-4">
+          <mxGeometry x="45" y="90" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="p3eGyqH2iu1hd-mBgMjx-10" value="&lt;pre style=&quot;font-family: &amp;#34;menlo&amp;#34;&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;assignReplicasToBrokers&lt;/font&gt;&lt;/pre&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="p3eGyqH2iu1hd-mBgMjx-9" parent="p3eGyqH2iu1hd-mBgMjx-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="70" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="75" y="70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3eGyqH2iu1hd-mBgMjx-11" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="p3eGyqH2iu1hd-mBgMjx-4">
+          <mxGeometry x="45" y="150" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="p3eGyqH2iu1hd-mBgMjx-12" value="&lt;pre&gt;&lt;span style=&quot;font-style: italic&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px&quot;&gt;assignReplicasToBrokersRackUnaware&lt;/font&gt;&lt;/span&gt;&lt;/pre&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="p3eGyqH2iu1hd-mBgMjx-11" parent="p3eGyqH2iu1hd-mBgMjx-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="130" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="75" y="130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3eGyqH2iu1hd-mBgMjx-13" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="p3eGyqH2iu1hd-mBgMjx-4">
+          <mxGeometry x="45" y="210" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="p3eGyqH2iu1hd-mBgMjx-14" value="&lt;pre style=&quot;font-family: &amp;#34;menlo&amp;#34;&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;writeTopicPartitionAssignment&lt;/font&gt;&lt;/pre&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="p3eGyqH2iu1hd-mBgMjx-13" parent="p3eGyqH2iu1hd-mBgMjx-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="190" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="75" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3eGyqH2iu1hd-mBgMjx-8" value="CreateTopics" style="html=1;verticalAlign=bottom;endArrow=block;exitX=0.9;exitY=0.025;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="hhm9ghPMKgNZbMPpqFwr-1" source="p3eGyqH2iu1hd-mBgMjx-1" target="p3eGyqH2iu1hd-mBgMjx-4">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="310" y="340" as="sourcePoint" />
+            <mxPoint x="710" y="460" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
