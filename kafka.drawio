@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-03T03:28:03.772Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="EtoQwO_i_qFvjrHB7OQ7" version="13.8.8" type="github" pages="10">
+<mxfile host="app.diagrams.net" modified="2020-11-03T03:43:13.364Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="Nwhtt48s_3Z6gA8oZsDh" version="13.8.8" type="github" pages="10">
   <diagram id="TySNi0Zyadw6SgvpFzOM" name="副本状态机">
     <mxGraphModel dx="1426" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1468,7 +1468,7 @@
       <root>
         <mxCell id="hhm9ghPMKgNZbMPpqFwr-0" />
         <mxCell id="hhm9ghPMKgNZbMPpqFwr-1" parent="hhm9ghPMKgNZbMPpqFwr-0" />
-        <mxCell id="hhm9ghPMKgNZbMPpqFwr-2" value="&lt;h1&gt;Topic创建场景&lt;/h1&gt;&lt;span style=&quot;color: rgb(68 , 68 , 68) ; font-family: monospace , monospace ; font-size: 15px ; text-align: justify ; background-color: rgb(247 , 248 , 248)&quot;&gt;1、&lt;/span&gt;&lt;span style=&quot;color: rgb(68 , 68 , 68) ; text-align: justify ; background-color: rgb(247 , 248 , 248)&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;kafka-topics.sh&lt;/font&gt;&lt;/span&gt;&lt;p&gt;2、&lt;font style=&quot;font-size: 12px&quot;&gt;auto.create.topics.enable = true 写入消息时发送Metadata请求创建&lt;/font&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="hhm9ghPMKgNZbMPpqFwr-1">
+        <mxCell id="hhm9ghPMKgNZbMPpqFwr-2" value="&lt;h1&gt;Topic创建场景&lt;/h1&gt;&lt;span style=&quot;color: rgb(68 , 68 , 68) ; text-align: justify ; background-color: rgb(247 , 248 , 248)&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;1&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(68 , 68 , 68) ; font-size: 15px ; text-align: justify ; background-color: rgb(247 , 248 , 248)&quot;&gt;、&lt;/span&gt;&lt;span style=&quot;color: rgb(68 , 68 , 68) ; text-align: justify ; background-color: rgb(247 , 248 , 248)&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;kafka-topics.sh&lt;/font&gt;&lt;/span&gt;&lt;p&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;2、auto.create.topics.enable = true 写入消息时发送Metadata请求创建&lt;/font&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="hhm9ghPMKgNZbMPpqFwr-1">
           <mxGeometry x="40" y="40" width="400" height="100" as="geometry" />
         </mxCell>
       </root>
